@@ -54,7 +54,7 @@ Ok donc ça ressemble à ça
 
 ### Emoji :
 
-C'était pas drôle. :joy:
+FEUR :joy: :joy: :joy: :joy: :joy: :joy: :joy: 
 
 ### Subscript : (Aucune idée de comment traduire ça en français)	
 H~2~O

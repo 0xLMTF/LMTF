@@ -1,89 +1,129 @@
-# Premier ReadMe de LMTF 🦊
+<div align="center">
 
-## 1. Hello World ! 👋🗺
+# ⚔️ VERSUS
 
-### First Test :
+### Le classement ELO officiel de ta bande de potes.
 
-Ok donc ça ressemble à ça
+*Padel, FIFA, échecs, fléchettes, Mario Kart... chaque duel compte. Chaque victoire se paie cash.*
 
-## 2. Goodbye World ! 👋🗺
+![status](https://img.shields.io/badge/status-en%20développement-orange)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
+![Express](https://img.shields.io/badge/Express-4-000000?logo=express&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-better--sqlite3-003B57?logo=sqlite&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-workspaces-F69220?logo=pnpm&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-### **Test Href :**
+</div>
 
-[Lien vers mon profil GitHub](https://github.com/0xLMTF)
-
-### **CHICKEN JOCKEY :**
-![CHICKEN JOCKEY](https://media.printables.com/media/prints/045dde77-3e5f-4efa-a675-c639ae3ab5b8/images/9543576_28d91279-65a8-4f82-b47b-c12c711670b9_19de3807-9aa1-45da-8df0-a666d8d099ef/thumbs/inside/1280x960/webp/minecraft-movies-chicken-jockey.webp "Chicken Jockey")
-
-### _Test Tableau Markdown :_
-
-| Titre 1       |     Titre 2     |        Titre 3 |
-| :------------ | :-------------: | -------------: |
-| Colonne       |     Colonne     |        Colonne |
-| Alignée à     |   Alignée au    |      Alignée à |
-| Gauche        |     Centre      |         Droite |
-
-## 3. Petits tests en Markdown :
-
-### *Ca tu peux copier-coller apparemment* :
-    Test copier-coller    
-     
-
-### Du code direct dans un bloc fermé :
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-### Note en Bas de Page :
-
-  Offre soumise à conditions. [^1]
-
-[^1]: Condition : if
-
-
-### Barrer le texte :
-~~ALLEZ HOP C'est barré~~
-
-### Liste des tâches :
-- [x] Créer un premier ReadMe
-- [ ] Recréer Solana
-- [ ] Dominer le monde
-
-### Emoji :
-
-FEUR :joy: :joy: :joy: :joy: :joy: :joy: :joy: 
-
-### Subscript : (Aucune idée de comment traduire ça en français)	
-H~2~O
-
-### Changement de Texte
-
-Gras  
-**Texte en gras**  
-Texte pas en gras
-
-Italique  
-*Texte en italique*  
-Texte pas en italique
-
-### Citation :
-> Petite citation test.
-
-### Liste ordonnée :
-
-1. Premier objet
-2. Deuxième objet
-3. Troisième objet
-
-### Liste non ordonnée :
-
-- Premier objet
-- Deuxième objet
-- Troisième objet
-
-
-### Ligne horizontale :
 ---
+
+## 🎯 Le pitch
+
+On a tous ce pote qui prétend être imbattable au FIFA sans jamais le prouver. **Versus** met fin au débat.
+
+C'est un tracker compétitif social pour les groupes d'amis : tu déclares tes matchs (sport, précision, stratégie, jeu vidéo...), ton **ELO** évolue en temps réel, ton historique face à chaque adversaire est consultable, et tes exploits débloquent des badges. Envie de structurer la baston sur la durée ? Monte une **ligue** avec classement saisonnier, ou une **coupe** à élimination directe avec bracket auto-généré.
+
+La rivalité entre potes, mais avec des stats. Interface sombre, néon cyan/fuchsia, aucune pitié.
+
+---
+
+## ✨ Fonctionnalités
+
+- 🏆 **Classement ELO** — chaque victoire/défaite recalcule ton rang en direct
+- ⚔️ **Matchs 1v1** — déclaration directe, ou soumission à validation (l'adversaire confirme le score avant que ça compte)
+- 🥇 **Ligues** — classement multi-joueurs sur une saison, rejoignable par code + mot de passe
+- 🏅 **Coupes** — tournois à élimination directe, bracket avec progression automatique des vainqueurs
+- 🎖️ **Badges** — débloqués automatiquement selon tes exploits (séries de victoires, nemesis battu...)
+- 🔔 **Notifications** — demandes d'amis, validations de match, demandes de preuve
+- 👥 **Réseau d'amis** — recherche par tag, demandes, stats head-to-head détaillées
+- 🎮 **4 catégories, 16 jeux** — Sport & Physique, Adresse & Précision, Réflexion & Stratégie, Jeux Vidéo
+- 🔐 **Comptes réels** — inscription, connexion JWT, sessions persistantes, suppression de compte en un clic
+
+---
+
+## 🖼️ Aperçu
+
+> _Glisse ici 2-3 captures d'écran ou un GIF (accueil, déclaration de match, bracket de coupe) — c'est ce qui vend le projet en 3 secondes à quelqu'un qui atterrit sur le repo._
+
+---
+
+## 🛠️ Stack technique
+
+| Couche | Techno |
+|---|---|
+| **Front** | React 19 + Vite + TypeScript + Tailwind CSS |
+| **API** | Express + SQLite (`better-sqlite3`) |
+| **Auth** | JWT + bcrypt, refresh tokens |
+| **Monorepo** | pnpm workspaces |
+
+---
+
+## 🚀 Démarrage rapide
+
+```bash
+# 1. Installer pnpm
+corepack prepare pnpm@9.15.0 --activate
+
+# 2. Config (une fois)
+cp versus-backend/.env.example versus-backend/.env
+
+# 3. Installer le monorepo + init DB
+corepack pnpm setup
+
+# 4. Lancer API (3001) + Web (5173)
+corepack pnpm dev
+```
+
+Front → **http://localhost:5173** · API → **http://localhost:3001/api/health**
+
+### Comptes démo (mot de passe : `versus123`)
+
+| Tag | Rôle |
+|---|---|
+| `@alex_god` | SUPERADMIN |
+| `@clement_boss` · `@hugo_fast` · `@sarah_smash` · `@thomas_pro` | USER |
+
+---
+
+## 🗺️ Roadmap
+
+- [x] Auth complète — inscription, connexion, session, suppression de compte
+- [x] API complète — matchs, ELO, ligues, coupes, notifications, amis
+- [x] Seed démo + comptes de test
+- [ ] Brancher matchs / ligues / coupes / notifications sur l'API (aujourd'hui : mock en mémoire côté front)
+- [ ] Découper l'écran principal en composants indépendants
+- [ ] Déploiement preview public (Vercel + Railway) — fini le ngrok
+- [ ] Migration Postgres / Supabase
+- [ ] App mobile React Native / Expo
+- [ ] Tests automatisés (Vitest + smoke API)
+
+---
+
+## 📁 Structure du repo
+
+```
+Versus/
+├── artifacts/versus/     # Front produit (Vite + React)
+├── versus-backend/       # API Express + SQLite
+└── scripts/              # Orchestration dev + smoke tests
+```
+
+---
+
+## 📌 État actuel
+
+L'API couvre déjà tout le domaine métier (matchs, ELO, ligues, coupes, notifications, amis) et persiste réellement en base. Le front, lui, n'est branché sur l'API que pour l'**authentification** — le reste (matchs, ligues, coupes) tourne encore sur des données de démo en mémoire, le temps de finir le câblage. Projet en développement actif, pas encore prêt pour la prod.
+
+---
+
+## 📄 Licence
+
+MIT — fais-en ce que tu veux.
+
+<div align="center">
+
+*Construit avec rage compétitive et beaucoup trop de café.* ☕
+
+</div>
